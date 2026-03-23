@@ -1,0 +1,28 @@
+Steps to Run the AQI Prediction App
+====================================
+
+1. Install Python:
+   - Ensure Python 3.6 or higher is installed on your system.
+   - Download from: https://www.python.org/downloads/
+
+2. Set up the project:
+   - Place all project files (app.py, train_model.py, requirements.txt, AQI_Data (1).csv) in the same folder.
+
+3. Install dependencies:
+   - Open a terminal or command prompt.
+   - Navigate to the project folder (e.g., cd path/to/project).
+   - Run: pip install -r requirements.txt
+
+4. Train the model:
+   - In the terminal, run: python train_model.py
+   - This creates the aqi_prediction_model.pkl file.
+
+5. Run the Streamlit app:
+   - In the terminal, run: streamlit run app.py
+   - Open the displayed URL (usually http://localhost:8501) in your browser.
+   - Enter pollutant values and click "Predict AQI".
+
+Notes:
+- Ensure all files are in the same directory.
+- If issues occur, verify Python and pip installation.
+- Important: Run the app using 'streamlit run app.py' in the terminal to avoid warnings. Do not use 'python app.py' directly.
